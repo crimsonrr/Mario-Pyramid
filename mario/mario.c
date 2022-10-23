@@ -7,7 +7,7 @@
         int n;
         do
         {
-           n = get_int("Width: ");
+           n = get_int("Size: ");
         }
        while (n < 1);
 
