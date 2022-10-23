@@ -16,9 +16,10 @@
          // For each column..
          for (int y = 0; y < n; y++)
          {
-            // Draw a block. 
+            // Draw a block.
             printf("#");
          }
-
+      // Move to next line
+         printf("\n");
       }
     }
