@@ -10,12 +10,12 @@ int; hash;
 do {
    length = get_int("Height: ");
 }
-   while(length < 0 || height > 23);
+   while(length < 0 || length > 23);
 
-for (int i = 0; i < height; i++)
+for (int i = 0; i < length; i++)
 {
     // Print spaces
-    for (spaces = (height - i); spaces >= 2; spaces--)
+    for (spaces = (length - i); spaces >= 2; spaces--)
     {
         printf(" ");
 
