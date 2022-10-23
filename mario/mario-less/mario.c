@@ -3,14 +3,14 @@
 
 int main(void)
 {
-int height;
+int length;
 int: spaces;
 int; hash;
 
 do {
-   height = get_int("Height: ");
+   length = get_int("Height: ");
 }
-   while(height < 0 || height > 23);
+   while(length < 0 || height > 23);
 
 for (int i = 0; i < height; i++)
 {
@@ -28,8 +28,3 @@ for (int i = 0; i < height; i++)
     printf("\n");
 }
 }
-
-
-
-
-
