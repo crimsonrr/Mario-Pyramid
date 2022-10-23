@@ -10,16 +10,7 @@
            n = get_int("Size: ");
         }
        while (n < 1);
-      // For each row..
+      // For each row.. 
        for (int x = 0; x < n; x++)
-       {
-         // For each column..
-         for (int y = 0; y < n; y++)
-         {
-            // Draw a block.
-            printf("#");
-         }
-      // Move to next line
-         printf("\n");
-      }
-    }
+
+
