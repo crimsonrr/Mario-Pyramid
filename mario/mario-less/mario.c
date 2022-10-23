@@ -10,9 +10,11 @@
            n = get_int("Size: ");
         }
          int i;{
-            i =
+            // Something happens
          }
-       while (n < 1);
+            while (x > 1 && x < 8);
+
+      while (n < 1);
       // For each row..
        for (int x = 0; x < n; x++)
 
