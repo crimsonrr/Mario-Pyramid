@@ -11,9 +11,12 @@
         }
        while (n < 1);
 
-       for (int i = 0; i < n; i++)
+       for (int x = 0; x < n; x++)
        {
-        printf("#");
-       }
-        printf("\n");
+         for (int y = 0; y < n; y++)
+         {
+            printf("#");
+         }
+
+      }
     }
