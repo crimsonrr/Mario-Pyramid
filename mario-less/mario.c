@@ -9,7 +9,7 @@ int main()
     do
     {
         // Asks for height
-        n = get_int("Height: ");
+        n = get_int("Number: ");
     }
 
     while (n < 1);

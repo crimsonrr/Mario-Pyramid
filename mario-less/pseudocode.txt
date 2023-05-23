@@ -1,0 +1,2 @@
+Asks for a possible number
+If the number is not possible, (I.e)
