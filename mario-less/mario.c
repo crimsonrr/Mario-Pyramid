@@ -1,29 +1,40 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
+
+void buildPyramid(int height);
 
 int main(void)
 {
-    int n;
+    // Initialize the variable height
+    int height;
+
+    // Run the loop to get a value of height between 1 and 8, inclusive, from the user
     do
     {
-        n = get_int("Positive Number: ");
+        height = get_int("Height: ");
     }
-    while (n < 1 || n > 8);
+    while (height < 1 || height > 8);
 
-     // Add a new line
-     for (int i = 0; i < n; i++)
-  {
-    // Add spaces
-      for (int j = n - i; j < n; j--)
-      {
+    // Call the function and pass height to it as a parameter
+    buildPyramid(height);
+}
 
-          printf(" ");
-      }
-    // add hash symbols
-    for (int k = 0; j <= i; j++)
+// Declare the function buildPyramid
+void buildPyramid(int height)
+{
+    // Loop to add a new line
+    for (int i = 0; i < height; i++)
     {
-        printf("#");
+        // Loop to add spaces
+        for (int k = height - i; k > 1; k--)
+        {
+            printf(" ");
+        }
+        // Loop to add hashes
+        for (int j = 0; j <= i; j++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
-  }
-}
+} 
