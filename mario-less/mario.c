@@ -1,33 +1,42 @@
+#include <stdio.h>
+#include <cs50.h>
 
-#include<cs50.h>
-#include<stdio.h>
-
-int main()
+int main(void)
 {
+    // Declaring variables
+    int height = 0;
+    int line = 0;
+    int column = 0;
 
-    int n;
-    do
+    while (true)
     {
-        // Asks for height
-        n = get_int("Number: ");
+        // Asks for number
+        height = get_int("Number: ");
+
+        if (height >= 1 && height <= 8)
+        {
+            break;
+        }
     }
 
-    while (n < 1 || n > 8);
-    // For each row
-    for (int i = 0; i < n; i++)
+    // Adds a row
+    for ( line = 1 ; line <= height ; line++ )
     {
-        //  For each column
-        for (int j = 0; j < i + 1; j++)
+    // Adds a column
+        for ( column = 1 ; column <= height ; column++ )
         {
-// Print a hash symbol
-            printf("#");
+           // Prints hash symbols
+            if ( column >= height + 1 - line )
+            {
+                printf("#");
+            }
+            else
+            {
+                // Prints spaces
+                printf(" ");
+            }
         }
-// Next line
+
         printf("\n");
     }
- // Adds spaces
-        for (int j = n - i; j > 1; j--)
-        {
-            printf(" ");
-        }
 }
