@@ -10,10 +10,10 @@ int main(void)
     }
     while (n < 1 || n > 8);
 
-     // For each row
+     // Add a new line
      for (int i = 0; i < n; i++)
   {
-    // For each column
+    // Add spaces 
       for (int j = 0; j < n; j++)
       {
         // Print a brick
