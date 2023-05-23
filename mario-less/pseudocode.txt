@@ -1,2 +1,2 @@
 Asks for a possible number
-If the number is not possible, (i.e. -1, or 132) then ask the user again for a number
+If the number is not possible, (i.e. -1, or 132) then go to the previous step and ask the user again for a number
