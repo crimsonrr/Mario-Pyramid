@@ -25,5 +25,9 @@ int main()
 // Next line
         printf("\n");
     }
-
+ // Adds spaces
+        for (int j = n - i; j > 1; j--)
+        {
+            printf(" ");
+        }
 }
