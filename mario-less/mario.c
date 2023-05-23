@@ -20,13 +20,13 @@ int main(void)
     }
 
     // Adds a row
-    for ( line = 1 ; line <= height ; line++ )
+    for (line = 1 ; line <= height ; line++)
     {
-    // Adds a column
-        for ( column = 1 ; column <= height ; column++ )
+        // Adds a column
+        for (column = 1 ; column <= height ; column++)
         {
-           // Prints hash symbols
-            if ( column >= height + 1 - line )
+            // Prints hash symbols
+            if (column >= height + 1 - line)
             {
                 printf("#");
             }
