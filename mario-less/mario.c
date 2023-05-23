@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
+void buildPyramid(int height);
+
 int main(void)
 {
     // Initialize the variable height
@@ -13,8 +15,12 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
+    // Call the function and pass height to it as a parameter
+    buildPyramid(height);
 }
 
+// Declare the function buildPyramid
+void buildPyramid(int height)
 {
     // Adds a new line
     for (int i = 0; i < height; i++)
