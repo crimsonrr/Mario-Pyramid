@@ -13,12 +13,13 @@ int main(void)
      // Add a new line
      for (int i = 0; i < n; i++)
   {
-    // Add spaces 
-      for (int j = 0; j < n; j++)
+    // Add spaces
+      for (int j = n - i; j < n; j--)
       {
-        // Print a brick
-          printf("#");
+
+          printf(" ");
       }
-      printf("\n");
+    // add hash symbols
+    for (int)
   }
 }
