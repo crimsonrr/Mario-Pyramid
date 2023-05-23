@@ -20,6 +20,10 @@ int main(void)
           printf(" ");
       }
     // add hash symbols
-    for (int)
+    for (int k = 0; j <= i; j++)
+    {
+        printf("#");
+        printf("\n");
+    }
   }
 }
